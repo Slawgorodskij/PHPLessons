@@ -95,6 +95,18 @@ $footer = 'Изготовлено в домашних условиях Слав�
     echo "Переменная 'one' равна $one <br>";
     echo "Переменная 'two' равна $two <br>";
     ?>
+    // второй вариант
+    <?php
+    $three = 3;
+    $four = 4;
+    echo "Переменная 'three' равна $three <br>";
+    echo "Переменная 'four' равна $four <br>";
+    $three = $three - $four;
+    $four = $three + $four;
+    $three = $four - $three;
+    echo "Переменная 'three' равна $three <br>";
+    echo "Переменная 'four' равна $four <br>";
+    ?>
   </main>
 
   <footer class="footer"><?php echo $footer ?></footer>
